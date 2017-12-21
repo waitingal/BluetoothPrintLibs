@@ -1,0 +1,14 @@
+PrintManage：
+1.添加连接回调：AddConnListener(BlePrintConnListener listener)
+2.移除连接监听：RemoveConnListener(BlePrintConnListener listener)
+3.是否已连接设备：CheckDeviceConnStatu()
+4.连接设备：ConnDevice(BluetoothDevice device)
+5.断开连接设备：StopDevice()
+6.销毁：ManageDestroy()
+7.发送字符串数据(默认GBK编码)：SendString(String data)
+8.发送指定编码格式字符串数据：SendString(String data,String format)
+9.发送byte[]:SendByte(byte[] out)
+
+BlePrintConnListener：
+1.连接成功：ConnectSuccess()
+2.连接失败：ConnectFail()
